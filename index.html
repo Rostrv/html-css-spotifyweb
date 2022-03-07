@@ -5,19 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="site-main"></main>
+    <main class="site-main">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <img src="./img/logo.svg" alt="">
+            </div>
+
+            <div class="navigation">
+
+                <div class="home">
+                    <img src="./img/home.svg" alt="">
+                    <a href=""><span>Home</span></a>
+                </div>
+
+                <div class="search">
+                    <img src="./img/search.svg" alt="">
+                    <a href=""><span>Search</span></a>
+                </div>
+
+                <div class="library">
+                    <img src="./img/libreria.svg" alt="">
+                    <a href=""><span>Library</span></a>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <h5>Playlist</h5>
+                <div class="crea">
+                    <i class="fa-solid fa-plus"></i>
+                    <a href="#">
+                        <span>Crea Playlist</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li><a href="">Top Hits Italia</a></li>
+                    <li><a href="">Alta Rotazione</a></li>
+                    <li><a href="">Indie Italia</a></li>
+                    <li><a href="">Big Italiani</a></li>
+                    <li><a href="">Graffiti Pop</a></li>
+                    <li><a href="">Casa Dolce Casa</a></li>
+                    <li><a href="">Zona Trap</a></li>
+                </ul>
+            </div>
+
+            <div class="side-footer">
+                <div class="install">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <span>Installa App</span>
+                </div>
+
+                <hr>
+
+                <div class="user">
+                    <img src="./img/profile.svg" alt="">
+                    <a href=""><span>John Doe</span></a>
+
+                </div>
+            </div>
+
+
+
+
+        </aside>
+
+        <div class="container">
+            <header class="site-head"></header>
+            <nav class="site-nav"></nav>
+        </div>
+    </main>
     <footer class="site-footer"></footer>
 
 </body>

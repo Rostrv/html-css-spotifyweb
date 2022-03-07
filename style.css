@@ -16,4 +16,138 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--small-text);
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.site-main {
+    height: 1000px;
+    width: auto;
+    display: flex;
+}
+
+.sidebar {
+    height: 1000px;
+    width: 15%;
+    background-color: var(--side-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.logo-section>img {
+    width: 80%;
+}
+
+.navigation img {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.home,
+.search,
+.library {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.playlist h5 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.crea i {
+    color: black;
+    padding: 10px;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.crea {
+    margin-bottom: 10px;
+}
+
+.list li {
+    margin-bottom: 20px;
+}
+
+.install {
+    margin-bottom: 10px;
+}
+
+.install i {
+    border: 1px solid var(--small-text);
+    border-radius: 50%;
+    color: var(--small-text);
+    padding: 5px;
+    font-size: smaller;
+}
+
+.install span {
+    color: var(--small-text);
+    font-weight: bold;
+    font-size: small;
+}
+
+hr {
+    color: #717478
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user img {
+    width: 10%;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: var(--small-text);
+    margin-right: 10px;
+}
+
+.container {
+    height: 1000px;
+    width: 85%;
+    background-color: var(--main-bg);
+}
+
+.user img {
+    width: 15%;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: var(--small-text);
+    display: flex;
+    align-items: center;
+}
+
+.site-head {
+    height: 90px;
+    width: auto;
+    background-color: var(--head-bg);
+}
+
+.site-footer {
+    height: 90px;
+    width: auto;
+    background-color: var(--footer-bg);
 }
