@@ -39,13 +39,18 @@ ul {
 /*#region sidebar*/
 
 .sidebar {
-    height: calc(100vh - 90px);
-    width: 15%;
+    height: 100vh;
+    width: 250px;
     background-color: var(--side-bg);
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-bottom: 90px;
     justify-content: space-between;
+}
+
+.sidebar span:hover {
+    color: white;
 }
 
 .logo-section {
@@ -76,18 +81,30 @@ ul {
 }
 
 .crea i {
-    color: black;
     padding: 10px;
     background-color: gray;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.crea i:hover {
+    background-color: white;
 }
 
 .crea {
     margin-bottom: 10px;
 }
 
+.list {
+    overflow: auto;
+}
+
 .list li {
     margin-bottom: 20px;
+}
+
+.list a:hover {
+    color: white;
 }
 
 .install {
@@ -100,12 +117,19 @@ ul {
     color: var(--small-text);
     padding: 5px;
     font-size: smaller;
+    cursor: pointer;
+}
+
+.install i:hover {
+    border: 1px solid white;
+    color: white;
 }
 
 .install span {
     color: var(--small-text);
     font-weight: bold;
     font-size: small;
+    cursor: pointer;
 }
 
 hr {
@@ -132,9 +156,10 @@ hr {
 
 .container {
     height: calc(100vh - 90px);
-    width: 85%;
+    width: calc(100% - 250px);
     background-color: var(--main-bg);
     overflow: auto;
+    padding-top: 90px;
 }
 
 .container img {
@@ -148,13 +173,19 @@ hr {
     margin-bottom: 20px;
 }
 
+
+/*#region head*/
+
 .site-head {
     height: 90px;
-    width: calc(100%-15%);
+    width: calc(100% - 267px);
     background-color: var(--head-bg);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 17px;
 }
 
 .site-head a {
@@ -167,9 +198,20 @@ hr {
     text-transform: uppercase;
 }
 
+.site-head a:hover {
+    transform: scale(1.1);
+}
+
+
+/*#endregion*/
+
+
+/*#region nav*/
+
 .site-nav {
     text-align: center;
     margin: 7px 0 12px;
+    position: relative;
 }
 
 .site-nav li {
@@ -179,18 +221,25 @@ hr {
     font-size: 15px;
 }
 
+.site-nav a:hover {
+    color: white;
+}
+
+
+/*#endregion*/
+
 
 /*#region playlist*/
 
 .recently-played {
     padding: 0 30px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .recently-played h1 {
-    margin-bottom: 30px;
     color: white;
     font-size: 30px;
+    margin-top: 30px;
 }
 
 .playlist-container h2 {
@@ -207,6 +256,7 @@ hr {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .playlist-type {
@@ -216,15 +266,13 @@ hr {
     text-align: center;
 }
 
-.playlist-type .img-container {
-    position: relative;
+.playlist-type .image-container {
     cursor: pointer;
-    margin-top: 30px;
 }
 
 .created-for {
     padding: 0 30px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .created-for h1 {
@@ -246,15 +294,25 @@ hr {
     border-radius: 50%;
 }
 
-
-/*
-.created-for span {
-    color: var(--small-text);
-    font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 20px;
+.image-container {
+    height: 200px;
+    width: 200px;
 }
-*/
+
+.image-container i {
+    position: relative;
+    bottom: 109px;
+    opacity: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.image-container:hover i {
+    opacity: 1;
+}
+
+
+/*#endregion*/
 
 
 /*#region footer*/
@@ -293,6 +351,10 @@ hr {
     color: var(--small-text);
 }
 
+.track-info span:hover {
+    color: white;
+}
+
 .track-icons {
     display: flex;
     align-items: center;
@@ -301,6 +363,10 @@ hr {
 
 .track-icons i {
     margin: 0 10px;
+}
+
+.track-icons i:hover {
+    color: white;
 }
 
 .main-controls {
@@ -341,6 +407,10 @@ hr {
     font-weight: bold;
 }
 
+.play:hover {
+    transform: scale(1.1);
+}
+
 .main-controls .track-bar {
     width: 75%;
     height: 4px;
@@ -356,6 +426,10 @@ hr {
     background-color: white;
     border-radius: 5px;
     position: relative;
+}
+
+.main-controls .track-bar:hover .white-bar {
+    background-color: var(--underline)
 }
 
 .gray-bar {
@@ -385,6 +459,34 @@ hr {
     justify-content: center;
     cursor: pointer;
     position: relative;
+}
+
+.right-controls .track-bar:hover .white-bar {
+    background-color: var(--underline)
+}
+
+.main-controls .track-bar:hover .white-bar::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.right-controls .track-bar:hover .white-bar::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    transform: translate(50%, -50%);
 }
 
 
