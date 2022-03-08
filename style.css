@@ -134,6 +134,18 @@ hr {
     height: calc(100vh - 90px);
     width: 85%;
     background-color: var(--main-bg);
+    overflow: auto;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container span {
+    color: var(--small-text);
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .site-head {
@@ -166,6 +178,83 @@ hr {
     margin: 10px 20px;
     font-size: 15px;
 }
+
+
+/*#region playlist*/
+
+.recently-played {
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+.recently-played h1 {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+.playlist-container h2 {
+    color: white;
+    font-size: medium;
+    margin: 5px 0;
+}
+
+.playlist-container span {
+    font-size: 12px;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.playlist-type {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.playlist-type .img-container {
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.created-for {
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+.created-for h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.popular-artist {
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+.popular-artist h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.circle-img {
+    border-radius: 50%;
+}
+
+
+/*
+.created-for span {
+    color: var(--small-text);
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+*/
 
 
 /*#region footer*/
